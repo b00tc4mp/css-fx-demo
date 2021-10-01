@@ -1,0 +1,51 @@
+/* resets */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* blocks */
+
+.menu {
+    display: inline-block;
+    background-color: blueviolet;
+    max-width: 1rem;
+}
+
+.menu__button-label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid red;
+    border-bottom: 25px solid transparent;
+    transition: all .5s ease;
+}
+
+.menu__button-checkbox {
+    visibility: hidden;
+}
+
+.menu__items {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 1rem;
+    position: relative;
+    left: -10rem;
+    z-index: -1;
+    transition: left 1s;
+}
+
+.menu__button-checkbox:checked ~ label {
+    transform: rotateZ(90deg);
+}
+
+.menu__button-checkbox:checked ~ .menu__items {
+    background-color: antiquewhite;
+    left: 1rem;
+}
+

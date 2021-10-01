@@ -1,0 +1,16 @@
+/* resets */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* blocks */
+
+.box {
+    transition: font-size 2s;
+}
+
+.box:hover {
+    font-size: 10rem;
+}

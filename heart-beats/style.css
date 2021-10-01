@@ -1,0 +1,41 @@
+/* resets */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* elements */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* blocks */
+
+.heart {
+    transition: font-size 2s;
+    animation-name: heart;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes heart {
+    0% {
+        font-size: 1rem;
+    }
+    45% {
+        font-size: 3rem;
+    }
+    70% {
+        font-size: 3rem;
+    }
+    100% {
+        font-size: 1rem;
+    }
+}

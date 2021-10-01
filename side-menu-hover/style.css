@@ -1,0 +1,23 @@
+/* resets */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* blocks */
+
+.menu {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 1rem;
+    position: relative;
+    left: -5rem;
+    cursor: pointer;
+    transition: left 1s;
+}
+
+.menu:hover {
+    left: 0;
+}
